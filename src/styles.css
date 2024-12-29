@@ -1,80 +1,39 @@
-body {
-  background: #f9f7fe;
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  color: #885df1;
-}
-
-.weather-app {
-  background: white;
-  max-width: 600px;
-  margin: 60px auto;
+main {
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 
-header {
-  border-bottom: 1px solid #f9f7fe;
-  padding-bottom: 30px;
+body {
+  background-color: #f9f7fe;
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.search-input {
+.searchfield {
   background-color: #f9f7fe;
   border: none;
-  color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
   padding: 20px;
   width: 75%;
-  border-radius: 6px;
+  border-radius: 10px;
 }
-
-.search-button {
-  margin-left: 5px;
+.searchbutton {
   font-size: 16px;
   background-color: #885df1;
   color: white;
   border: none;
-  padding: 20px;
+  border-radius: 10px;
+  padding: 20px 20px;
+  margin-left: 5px;
   line-height: 1;
-  border-radius: 5px;
-}
-
-main {
-  padding: 30px 0;
 }
 
 .current-temperature {
-  font-size: 48px;
-}
-
-.current-weather {
-  display: flex;
-  justify-content: space-between;
-}
-
-.current-city {
-  font-size: 38px;
-  font-weight: 900;
-  margin: 0;
-}
-.current-details {
-  color: rgba(39, 33, 66, 0.4);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.current-details strong {
-  color: #f65282;
+  font-size: large;
 }
 
 .current-temperature-icon {
   position: relative;
-  top: -8px;
-  font-size: 40px;
+  font-size: 32px;
+  top: -10px;
   margin-right: 10px;
 }
 
@@ -86,13 +45,49 @@ main {
 .current-temperature-unit {
   font-size: 28px;
   position: relative;
-  top: -38px;
+  top: -40px;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weatherapp {
+  background-color: white;
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.current-city {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.current-detail {
+  color: #27214266;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.current-detail strong {
+  color: #f65282;
 }
 
 footer {
-  border-top: 1px solid #f9f7fe;
   text-align: center;
+  color: #27214266;
+  border-top: 1px solid ##885df1;
   padding-top: 15px;
-
-  color: rgba(39, 33, 66, 0.4);
 }
